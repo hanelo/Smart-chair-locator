@@ -37,4 +37,5 @@ implementation imagery
 ![ec5f41e6-5b83-4e3d-8246-44c9520576b7](https://github.com/hanelo/Smart-chair-locator/assets/89151879/9e73b6fd-5aa0-4dca-be4f-25edac49090d)
 
 ![9084132e-b118-42f1-a8a0-2a1c89e75350](https://github.com/hanelo/Smart-chair-locator/assets/89151879/5dadfc7b-b88a-4b8d-9de8-6f40974a5965)
-![ec5f41e6-5b83-4e3d-8246-44c9520576b7](https://github.com/hanelo/Smart-chair-locator/assets/89151879/63c03af8-c7ff-46a4-9345-7cb45d219621)
+
+![Uploading abb05c1d-fe30-447c-94ac-474ddef8950b.jpg…]()
