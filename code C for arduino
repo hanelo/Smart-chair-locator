@@ -1,0 +1,43 @@
+int siege1=A0;
+int siege2=A1;
+int dsiege1=2;
+int dsiege2=3;
+int p1=8;
+int p2=9;
+int valeurseuil=400;
+void setup() {
+pinMode(siege1,INPUT);
+pinMode (siege2,INPUT);
+
+pinMode(siege1,INPUT);
+pinMode (siege2,INPUT);
+pinMode (p1,OUTPUT);
+pinMode (p2,OUTPUT);
+Serial.begin(9600);}
+void loop() {
+//  
+Serial.print(analogRead(siege1));
+Serial.print("\t");
+Serial.println(analogRead(siege2));
+Serial.print(digitalRead(dsiege1));
+   digitalWrite(p1,LOW);
+    digitalWrite(p2,LOW);
+if(!digitalRead(dsiege1)&&analogRead(siege1)>valeurseuil){
+  digitalWrite(p1,HIGH);
+    digitalWrite(p2,LOW);
+  }
+ if(!digitalRead(dsiege2)&&analogRead(siege2)>valeurseuil){
+  digitalWrite(p2,HIGH);
+  digitalWrite(p1,LOW);
+  }
+   
+   
+  if(!digitalRead(dsiege1)&&analogRead(siege1)<valeurseuil &&analogRead(siege2)>valeurseuil ){
+  digitalWrite(p2,HIGH);
+  digitalWrite(p1,LOW);
+  }
+ if(!digitalRead(dsiege2)&&analogRead(siege2)<valeurseuil &&analogRead(siege1)>valeurseuil ){
+  digitalWrite(p1,HIGH);
+  digitalWrite(p2,LOW);
+  }
+}
