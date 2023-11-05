@@ -32,45 +32,9 @@ Join us on this exciting journey to simplify the seating experience for tourists
 d code for Arduino and its accompanying explanatory presentation.(https://github.com/hanelo/Smart-chair-locator/files/13260775/Smart.Luggage.System.8.pdf)
 
 
-int dsiege1=2;
-int dsiege2=3;
-int p1=8;
-int p2=9;
-int valeurseuil=400;
-void setup() {
-pinMode(siege1,INPUT);
-pinMode (siege2,INPUT);
+[Smart Luggage System (8).pdf](https://github.com/hanelo/Smart-chair-locator/files/13260782/Smart.Luggage.System.8.pdf)
+implementation imagery
+![ec5f41e6-5b83-4e3d-8246-44c9520576b7](https://github.com/hanelo/Smart-chair-locator/assets/89151879/9e73b6fd-5aa0-4dca-be4f-25edac49090d)
 
-pinMode(siege1,INPUT);
-pinMode (siege2,INPUT);
-pinMode (p1,OUTPUT);
-pinMode (p2,OUTPUT);
-Serial.begin(9600);}
-void loop() {
-//  
-Serial.print(analogRead(siege1));
-Serial.print("\t");
-Serial.println(analogRead(siege2));
-Serial.print(digitalRead(dsiege1));
-   digitalWrite(p1,LOW);
-    digitalWrite(p2,LOW);
-if(!digitalRead(dsiege1)&&analogRead(siege1)>valeurseuil){
-  digitalWrite(p1,HIGH);
-    digitalWrite(p2,LOW);
-  }
- if(!digitalRead(dsiege2)&&analogRead(siege2)>valeurseuil){
-  digitalWrite(p2,HIGH);
-  digitalWrite(p1,LOW);
-  }
-   
-   
-  if(!digitalRead(dsiege1)&&analogRead(siege1)<valeurseuil &&analogRead(siege2)>valeurseuil ){
-  digitalWrite(p2,HIGH);
-  digitalWrite(p1,LOW);
-  }
- if(!digitalRead(dsiege2)&&analogRead(siege2)<valeurseuil &&analogRead(siege1)>valeurseuil ){
-  digitalWrite(p1,HIGH);
-  digitalWrite(p2,LOW);
-  }
-}
-ing ProgramC.ino…]()
+![9084132e-b118-42f1-a8a0-2a1c89e75350](https://github.com/hanelo/Smart-chair-locator/assets/89151879/5dadfc7b-b88a-4b8d-9de8-6f40974a5965)
+![ec5f41e6-5b83-4e3d-8246-44c9520576b7](https://github.com/hanelo/Smart-chair-locator/assets/89151879/63c03af8-c7ff-46a4-9345-7cb45d219621)
